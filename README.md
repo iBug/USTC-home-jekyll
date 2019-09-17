@@ -29,4 +29,6 @@
 
 然后，在你 Fork 的仓库中编辑 `_config.yml` 文件，找到 `baseurl:` 这一行，把它的值改成 `/~` 后面跟上你的邮箱用户名部分。例如，如果你的邮箱是 `example@mail.ustc.edu.cn`，那么 `baseurl:` 后面就是 `/~example`。如果你的邮箱是以 `@ustc.edu.cn` 结尾的，那么你还应该把 `url:` 这一行改成 `http://staff.ustc.edu.cn`。
 
-点击下面绿色的 Commit changes 按钮，等待 2~3 分钟（第一次推送时间会比较长），你就可以在 `http://home.ustc.edu.cn/~username` 这里看到你的新主页了。
+点击下面绿色的 Commit changes 按钮，等待 2~3 分钟（第一次推送时间会比较长），你就可以在 `http://home.ustc.edu.cn/~username` 这里看到你的新主页了，[就像这样](http://home.ustc.edu.cn/~ibug)：
+
+![](https://ibugone.com/image/USTC-home-jekyll/preview.png)
