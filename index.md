@@ -1,7 +1,3 @@
----
-layout: default
----
+# 我的科大主页
 
-# Welcome to iBug's home page!
-
-Please visit <https://github.com/iBug/USTC-home-jekyll> to learn more about this wonderful home page.
+这里空空如也，快来写点东西吧！
