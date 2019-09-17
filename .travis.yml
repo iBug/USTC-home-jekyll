@@ -12,3 +12,7 @@ script:
 
 after_success:
   - script/deploy.sh
+
+branches:
+  only:
+    - master
