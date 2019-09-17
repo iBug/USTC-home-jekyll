@@ -1,0 +1,23 @@
+url: http://home.ustc.edu.cn  # Change to "http://staff.ustc.edu.cn" if you're a staff
+baseurl: /~ibug               # Change to "/~" plus your email username
+
+theme: minima
+title: "My awesome home page" # Your home page name
+description: "Blah blah"      # Your description
+
+exclude:
+  - '.*'
+  - '*.yml'
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - /script
+  - vendor/bundle
+  - vendor/cache
+  - vendor/gems
+  - vendor/ruby

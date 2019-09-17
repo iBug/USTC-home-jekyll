@@ -1,0 +1,14 @@
+# Apache Subversion
+.svn
+
+# Bundler
+Gemfile.lock
+vendor/
+.bundle/
+
+# Jekyll
+.git-metadata
+.jekyll-cache
+.jekyll-metadata
+.sass-cache
+_site
