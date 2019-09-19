@@ -1,5 +1,5 @@
 url: http://home.ustc.edu.cn  # Change to "http://staff.ustc.edu.cn" if you're a staff
-baseurl: /~ibug               # Change to "/~" plus your email username
+baseurl: /~gyx_20170818               # Change to "/~" plus your email username
 
 theme: minima
 title: "My awesome home page" # Your home page name
