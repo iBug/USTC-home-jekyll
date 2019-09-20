@@ -58,6 +58,7 @@ parse_env() {
 
 deploy() {
   lftp -c "
+  set dns:order \"inet inet6\"
   set ftp:list-options -a
   open $1
   user $2 $3
