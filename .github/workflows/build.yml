@@ -1,0 +1,34 @@
+name: build
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-ruby@v1
+      with:
+        ruby-version: 2.7
+    - name: Setup cache for Bundler
+      id: cache
+      uses: actions/cache@v2
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-bundler-2.7-${{ hashFiles('Gemfile') }}
+    - name: Install dependencies
+      run: bundle install --path=vendor/bundle
+    - name: Build site
+      run: bundle exec jekyll build --trace
+      env:
+        JEKYLL_ENV: production
+        RUBYOPT: -W0
+    - name: Deploy
+      run: |
+        sudo apt-get update && sudo apt-get -y install lftp
+        bash script/deploy.sh
+      env:
+        EMAIL: ${{ secrets.EMAIL }}
+        PASSWORD: ${{ secrets.PASSWORD }}
