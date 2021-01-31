@@ -24,10 +24,9 @@ jobs:
       run: bundle exec jekyll build --trace
       env:
         JEKYLL_ENV: production
-        RUBYOPT: -W0
     - name: Deploy
       run: |
-        sudo apt-get update && sudo apt-get -y install lftp
+        sudo apt-get -y install lftp
         bash script/deploy.sh
       env:
         EMAIL: ${{ secrets.EMAIL }}

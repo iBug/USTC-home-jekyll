@@ -17,4 +17,4 @@
 
 点击下面绿色的 Commit changes 按钮，等待 2~3 分钟（第一次推送时间会比较长），你就可以在 `http://home.ustc.edu.cn/~username` 这里看到你的新主页了，[就像这样](http://home.ustc.edu.cn/~ibug)：
 
-![](https://ibugone.com/image/USTC-home-jekyll/preview.png)
+![Preview](https://image.ibugone.com/USTC-home-jekyll/preview.png)
